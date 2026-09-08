@@ -1,70 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Nick's Personal Basic Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Resume portfolio for Nicholas Pyland, an aspiring front-end developer.">
+	<title>Nicholas Pyland | Resume</title>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-  <table cellspacing="20">
-    <tr>
-      <td><img src="images/nick.png" width="150" height="150" alt="nick pyland profile picture"></td>
-      <td>
-        <h1>Nick Pyland</h1>
-        <p><em>Looking to become a <strong>Beginner Programmer</strong>.</em></p>
-        <p><em>Songwriter, Vocalist and Multi-Instrumentalist for the band <strong><a href="https://www.facebook.com/tanksmusic">Tanks</a></strong>.</em></p>
-        <p>I am a former bartender/server looking to make a change in careers. I am also a longtime musician and creative songwriter.</p>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <h3>Education</h3>
-  <ul>
-    <li>Valley View Elementary</li>
-    <li>Valley View High School</li>
-  </ul>
-  <hr>
-  <h3>Work Experience</h3>
-  <table cellspacing="10">
-    <thead>
-      <tr>
-        <th>Dates</th>
-        <th>Work</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2010-2015</td>
-        <td>Server at The Barbeque Shop</td>
-      </tr>
-      <tr>
-        <td>2010</td>
-        <td>Began Waiting Tables</td>
-      </tr>
+	<header class="site-header"><div class="shell header-inner"><a class="brand" href="index.html">NP<span>.</span></a><nav aria-label="Primary navigation"><a class="active" href="index.html">Resume</a><a href="cover-letter.html">Cover Letter</a><a href="career-goals.html">Career Goals</a></nav></div></header>
+	<main class="shell page-wrap">
+		<section class="intro-grid" aria-labelledby="resume-title"><div><p class="eyebrow">Digital product builder</p><h1 id="resume-title">Nicholas Pyland</h1><p class="role">Front-end developer <span class="accent-dot">/</span> UX-minded problem solver</p></div><div class="date-box"><span>Portfolio updated</span><div id="current-date"></div></div></section>
+		<hr>
+		<section class="resume-layout"><article class="content-column"><div class="section-heading"><p class="eyebrow">Profile</p><h2>Make useful things feel inevitable.</h2></div><p>I am a curious front-end developer who turns complex requirements into clear, accessible interfaces. My work blends <strong>semantic HTML</strong>, thoughtful CSS, and steady iteration.</p><p>I enjoy collaborating with people who care about the details and believe that <em>good technology should feel welcoming.</em></p><div class="section-heading compact-heading"><p class="eyebrow">Experience</p><h2>Selected work</h2></div><article class="timeline-item"><h3>Web Development Intern</h3><p class="muted">Northstar Learning Lab <span>|</span> 2024 - Present</p><p>Built responsive learning tools, documented reusable components, and improved keyboard navigation across a student dashboard.</p></article><article class="timeline-item"><h3>Content Designer</h3><p class="muted">Brightside Community Arts <span>|</span> 2022 - 2024</p><p>Created campaign pages and editorial systems that helped a small team publish consistent, engaging community programming.</p></article><div class="section-heading compact-heading"><p class="eyebrow">Education</p><h2>Learning in public</h2></div><p><strong>B.S. in Information Technology</strong><br>Western Governors University <span class="muted">| Expected 2026</span></p></article><aside class="side-column"><section class="side-panel" aria-labelledby="skills-title"><h2 id="skills-title">Core skills</h2><ul class="skill-list"><li>HTML & accessibility</li><li>CSS layout systems</li><li>JavaScript fundamentals</li><li>Responsive design</li><li>Content strategy</li></ul></section><section class="side-panel" aria-labelledby="contact-title"><h2 id="contact-title">Contact</h2><p><a href="mailto:nicholas.pyland@northstarlab.org">nicholas.pyland@northstarlab.org</a><br>Memphis, Tennessee<br><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn profile</a></p></section></aside></section>
+		<section class="table-section" aria-labelledby="projects-title"><div class="section-heading"><p class="eyebrow">Selected projects</p><h2 id="projects-title">A practical toolkit</h2></div><table><caption>Recent project snapshots</caption><thead><tr><th>Project</th><th>Role</th><th>Tools</th><th>Outcome</th></tr></thead><tbody><tr><td>Trailhead</td><td>Developer</td><td>HTML, CSS</td><td>Clearer onboarding flow</td></tr><tr><td>Open Studio</td><td>Designer</td><td>Figma, Content</td><td>Unified event publishing</td></tr><tr><td>Study Loop</td><td>Builder</td><td>JavaScript</td><td>Faster study sessions</td></tr></tbody></table></section>
+	</main>
+	<footer class="site-footer"><div class="shell"><p>&copy; 2026 Nicholas Pyland <span>|</span> Built with care and plain HTML.</p></div></footer>
+	<script>document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }); console.log('Nicholas Pyland portfolio loaded successfully.');</script>
+	<script>
+		const profileParagraph = document.querySelector('.content-column > p');
+		profileParagraph.innerHTML = profileParagraph.innerHTML.replace('thoughtful CSS', '<strong>thoughtful CSS</strong>').replace('steady iteration', '<strong>steady iteration</strong>');
+		document.querySelector('.content-column > p:last-child .muted').remove();
+	</script>
 </body>
-</table>
-<hr>
-<h3>Skills</h3>
-<table cellspacing="10">
-  <tr>
-    <td>Song Writing</td>
-    <td>⭐️⭐️⭐️⭐️⭐️</td>
-  </tr>
-  <tr>
-    <td>Arrangement</td>
-    <td>⭐️⭐️⭐️⭐️⭐️</td>
-  </tr>
-  <tr>
-    <td>Applying Dynamics</td>
-    <td>⭐️⭐️⭐️⭐️⭐️</td>
-  </tr>
-</table>
-<hr>
-<a href="hobbies.html">My Hobbies</a>
-<p>
-  <a href="contactme.html">Contact Me</a>
-</p>
-</body>
-
 </html>
